@@ -1,0 +1,10 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Gallery">
+            <c-contact-tiles oncontactclick={handleContactClick} con-list={contactList}></c-contact-tiles>
+        </lightning-tab>
+        <lightning-tab label="Grid">
+            <c-contact-table oncontactclick={handleContactClick} con-list={contactList}></c-contact-table>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

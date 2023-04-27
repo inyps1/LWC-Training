@@ -1,0 +1,7 @@
+<template>
+    <template for:each={conList} for:item="con">
+        <c-contact-tile oncontactclick={handleContactClick} selected-contact-id={selectedContactId} key={con.Id}
+            contact={con}></c-contact-tile>
+        <!--on is added on cusom event name-->
+    </template>
+</template>

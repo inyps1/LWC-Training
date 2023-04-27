@@ -1,0 +1,12 @@
+Name,Type,Industry,NumberOfEmployees,BillingStreet
+GenePoint,Customer - Channel,Biotechnology,265,"345 Shoreline Park Mountain View, CA 94043 USA"
+"United Oil & Gas, UK",Customer - Direct,Energy,24000,"Kings Park, 17th Avenue, Team Valley Trading Estate, Gateshead, Tyne and Wear NE26 3HS United Kingdom"
+"United Oil & Gas, Singapore",Customer - Direct,Energy,3000,"9 Tagore Lane Singapore, Singapore 787472 Singapore"
+Edge Communications,Customer - Direct,Electronics,1000,"312 Constitution Place Austin, TX 78767 USA"
+Burlington Textiles Corp of America,Customer - Direct,Apparel,9000,525 S. Lexington Ave
+Pyramid Construction Inc.,Customer - Channel,Construction,2680,2 Place Jussieu
+Dickenson plc,Customer - Channel,Consulting,120,1301 Hoch Drive
+Grand Hotels & Resorts Ltd,Customer - Direct,Hospitality,5600,"2334 N. Michigan Avenue, Suite 1500 Chicago, IL 60601, USA"
+Express Logistics and Transport,Customer - Channel,Transportation,12300,"620 SW 5th Avenue Suite 400 Portland, Oregon 97204 United States"
+University of Arizona,Customer - Direct,Education,39000,"888 N Euclid Hallis Center, Room 501 Tucson, AZ 85721 United States"
+United Oil & Gas Corp.,Customer - Direct,Energy,145000,"1301 Avenue of the Americas New York, NY 10019 USA"

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="LDT">
+        <template if:true={selectedOpportunityId}>
+            <lightning-button slot="actions" label="Delete" variant="destructive"
+                onclick={handleClick}></lightning-button>
+        </template>
+        <lightning-datatable data={oppList.data} columns={oppCols} key-field="id" show-row-number-column
+            max-row-selection="1" onrowselection={handleRowSelection}>
+        </lightning-datatable>
+    </lightning-card>
+
+</template>

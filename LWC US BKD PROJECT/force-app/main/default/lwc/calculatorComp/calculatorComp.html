@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Simple Calculator">
+        <div slot="actions">
+            <lightning-button label="Add" variant="brand" icon-name="utility:add" onclick={add}></lightning-button>
+            <lightning-button label="Substract" variant="brand" icon-name="utility:dash"
+                onclick={sub}></lightning-button>
+            <lightning-button label="Multiply" variant="brand" icon-name="utility:close"
+                onclick={mult}></lightning-button>
+            <lightning-button label="Divide" variant="brand" icon-name="utility:datadotcom"
+                onclick={div}></lightning-button>
+        </div>
+        <div class="slds-box">
+            <lightning-input onblur={handleFirstNumber} label="First Number" value={firstNumber}></lightning-input>
+            <lightning-input onblur={handleSecondNumber} label="Second Number" value={secondNumber}></lightning-input>
+        </div>
+        <div class="slds-box result-style">
+            Result of the operation : {result}
+        </div>
+    </lightning-card>
+</template>

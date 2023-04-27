@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Opportunities - Wire and apex with a property ">
+        <table class="slds-table slds-table_bordered slds-table_col-bordered slds-table_striped">
+            <thead>
+                <th>Name</th>
+                <th>Stage Name</th>
+                <th>Close Date</th>
+                <th>Amount</th>
+            </thead>
+            <tbody>
+                <template for:each={oppList.data} for:item="opp">
+                    <tr key={opp.Id}>
+                        <td>{opp.Name}</td>
+                        <td>{opp.StageName}</td>
+                        <td>{opp.CloseDate}</td>
+                        <td>{opp.Amount}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </lightning-card>
+</template>

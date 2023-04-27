@@ -1,0 +1,19 @@
+<apex:page standardController="Position__c" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="Position Edit">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Information" collapsible="false">
+                <apex:inputField value="{!Position__c.Name}"/>
+                <apex:inputField value="{!Position__c.Department__c}"/>
+                <apex:inputField value="{!Position__c.Status__c}"/>
+                <apex:inputField value="{!Position__c.Hiring_Manager__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Experience" collapsible="false">
+                 <apex:inputField value="{!Position__c.Skills_Required__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

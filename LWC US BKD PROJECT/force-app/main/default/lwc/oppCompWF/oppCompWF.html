@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Opportunities - Wire and apex with a property ">
+        <table class="slds-table slds-table_bordered slds-table_col-bordered slds-table_striped">
+            <thead>
+                <th>Name</th>
+                <th>Stage Name</th>
+                <th>Close Date</th>
+                <th>Amount</th>
+                <th>CovidTax</th>
+            </thead>
+            <tbody>
+                <template for:each={oppList} for:item="opp">
+                    <tr key={opp.Id}>
+                        <td>{opp.Name}</td>
+                        <td>{opp.StageName}</td>
+                        <td>{opp.CloseDate}</td>
+                        <td>{opp.Amount}</td>
+                        <template if:true={opp.Amount}>
+                            <td>{opp.CovidTax}</td>
+                        </template>
+                        <template if:false={opp.Amount}>
+                            <td>
+                                <lightning-badge class="slds-theme_error" label="Amount is Empty"></lightning-badge>
+                            </td>
+                        </template>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </lightning-card>
+</template>
